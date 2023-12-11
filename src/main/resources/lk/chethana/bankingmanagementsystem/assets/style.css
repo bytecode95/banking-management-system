@@ -1,0 +1,5 @@
+.left-form{
+    -fx-background-color: linear-gradient(to bottom right, #313896, #00d7ff, #9f32b2);
+    -fx-border-color: #000;
+    -fx-border-width: 0.4px 0px 0.4px 0.4px;
+}
