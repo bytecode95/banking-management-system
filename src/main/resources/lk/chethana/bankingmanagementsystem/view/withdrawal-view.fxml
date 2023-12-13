@@ -7,68 +7,67 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane fx:id="root" prefHeight="900.0" prefWidth="863.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.chethana.bankingmanagementsystem.controllers.WithdrawalController">
+<AnchorPane fx:id="root" prefHeight="900.0" prefWidth="863.0" styleClass="function-form" stylesheets="@../assets/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.chethana.bankingmanagementsystem.controllers.WithdrawalController">
    <children>
-      <ImageView fitHeight="900.0" fitWidth="877.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assets/atm.jpg" />
-         </image>
-      </ImageView>
-      <Text fill="WHITE" layoutX="188.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To Sri Lankan Bank ATM Service" textAlignment="CENTER" wrappingWidth="486.13665771484375">
-         <font>
-            <Font name="System Bold" size="36.0" />
-         </font>
-      </Text>
-      <ImageView fitHeight="69.0" fitWidth="79.0" layoutX="119.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assets/icons8-atm-64.png" />
-         </image>
-      </ImageView>
-      <Text fill="WHITE" layoutX="154.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECT THE WITHDRAWAL AMOUNT" wrappingWidth="340.5367431640625">
+      <Text layoutX="261.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECT THE WITHDRAWAL AMOUNT" wrappingWidth="340.5367431640625">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Text>
-      <Button layoutX="341.0" layoutY="411.0" mnemonicParsing="false" onAction="#fourthWithdrawal" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: white;" text="Rs. 2000">
+      <Button layoutX="511.0" layoutY="610.0" mnemonicParsing="false" onAction="#fourthWithdrawal" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: black;" text="Rs. 2000" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="266.0" layoutY="553.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: white;" text="BACK">
+      <Button layoutX="338.0" layoutY="836.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="158.0" style="-fx-background-color: black;" text="BACK" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Button layoutX="341.0" layoutY="459.0" mnemonicParsing="false" onAction="#sixthWithdrawal" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: white;" text="Rs. 10000">
+      <Button layoutX="511.0" layoutY="684.0" mnemonicParsing="false" onAction="#sixthWithdrawal" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: black;" text="Rs. 10000" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="154.0" layoutY="459.0" mnemonicParsing="false" onAction="#fifthWithdrawal" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: white;" text="Rs. 5000">
+      <Button layoutX="173.0" layoutY="684.0" mnemonicParsing="false" onAction="#fifthWithdrawal" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: black;" text="Rs. 5000" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="154.0" layoutY="411.0" mnemonicParsing="false" onAction="#thirdWithdrawal" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: white;" text="Rs.1000">
+      <Button layoutX="173.0" layoutY="610.0" mnemonicParsing="false" onAction="#thirdWithdrawal" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: black;" text="Rs.1000" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="154.0" layoutY="364.0" mnemonicParsing="false" onAction="#oneWithdrawal" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: white;" text="Rs. 100">
+      <Button layoutX="173.0" layoutY="546.0" mnemonicParsing="false" onAction="#oneWithdrawal" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: black;" text="Rs. 100" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="341.0" layoutY="364.0" mnemonicParsing="false" onAction="#secondWithdrawal" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: white;" text="Rs. 500">
+      <Button layoutX="511.0" layoutY="546.0" mnemonicParsing="false" onAction="#secondWithdrawal" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: black;" text="Rs. 500" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="247.0" layoutY="506.0" mnemonicParsing="false" onAction="#otherWithdrawal" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: white;" text="OTHER">
+      <Button layoutX="341.0" layoutY="750.0" mnemonicParsing="false" onAction="#otherWithdrawal" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: black;" text="OTHER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
+      <ImageView fitHeight="326.0" fitWidth="678.0" layoutX="162.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/withdrawal.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="223.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO SRI LANKAN BANK" wrappingWidth="446.936767578125">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="319.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SECTION: WITHDRAWAL" wrappingWidth="253.33673095703125">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

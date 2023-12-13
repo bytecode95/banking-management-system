@@ -1,5 +1,27 @@
 .left-form{
-    -fx-background-color: linear-gradient(to bottom right, #313896, #00d7ff, #9f32b2);
+    -fx-background-color: linear-gradient(to bottom right, #b0b0f6, #963af7, #5c1c71);
     -fx-border-color: #000;
     -fx-border-width: 0.4px 0px 0.4px 0.4px;
+}
+
+.signup-form{
+    -fx-background-color: linear-gradient(to bottom right, #cbc7d9, #bcbcc9, #c9b8cf);
+    -fx-border-color: #000;
+    -fx-border-width: 0.4px 0px 0.4px 0.4px;
+}
+
+.function-form{
+    -fx-background-color: linear-gradient(to bottom right, #b0b0f6, #a491d4, #c168e0);
+    -fx-border-color: #000;
+    -fx-border-width: 0.4px 0px 0.4px 0.4px;
+}
+
+.main-btn{
+    -fx-background-color:linear-gradient(to bottom, #9e285e,#6f0c6b,#cd1167);
+    -fx-background-radius:10px, 10px, 10px, 10px;
+    -fx-cursor:hand;
+}
+
+.main-btn:hover{
+    -fx-background-color:linear-gradient(to bottom, #9e285e,#6f0c6b);
 }

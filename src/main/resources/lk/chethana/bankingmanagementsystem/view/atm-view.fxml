@@ -7,63 +7,62 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane fx:id="root" prefHeight="900.0" prefWidth="863.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.chethana.bankingmanagementsystem.controllers.ATMController">
+<AnchorPane fx:id="root" prefHeight="900.0" prefWidth="863.0" styleClass="function-form" stylesheets="@../assets/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.chethana.bankingmanagementsystem.controllers.ATMController">
    <children>
-      <ImageView fitHeight="900.0" fitWidth="877.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assets/atm.jpg" />
-         </image>
-      </ImageView>
-      <Text fill="WHITE" layoutX="188.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To Sri Lankan Bank ATM Service" textAlignment="CENTER" wrappingWidth="486.13665771484375">
+      <Text layoutX="271.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLEASE SELECT YOUR TRANSACTION" wrappingWidth="340.5367431640625">
          <font>
-            <Font name="System Bold" size="36.0" />
+            <Font name="System Bold" size="18.0" />
          </font>
       </Text>
-      <ImageView fitHeight="69.0" fitWidth="79.0" layoutX="119.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assets/icons8-atm-64.png" />
-         </image>
-      </ImageView>
-      <Text fill="WHITE" layoutX="154.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Select Your Transaction" wrappingWidth="340.5367431640625">
+      <Button layoutX="327.0" layoutY="684.0" mnemonicParsing="false" onAction="#getStatement" prefHeight="67.0" prefWidth="190.0" styleClass="main-btn" stylesheets="@../assets/style.css" text="MINI STATEMENT" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="23.0" />
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="327.0" layoutY="805.0" mnemonicParsing="false" onAction="#exit" prefHeight="67.0" prefWidth="190.0" styleClass="main-btn" stylesheets="@../assets/style.css" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="623.0" layoutY="684.0" mnemonicParsing="false" onAction="#getBalance" prefHeight="76.0" prefWidth="151.0" styleClass="main-btn" stylesheets="@../assets/style.css" text="BALANCE ENQUIRY" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="623.0" layoutY="545.0" mnemonicParsing="false" onAction="#getChanegPin" prefHeight="76.0" prefWidth="151.0" styleClass="main-btn" stylesheets="@../assets/style.css" text="PIN CHANGE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="58.0" layoutY="684.0" mnemonicParsing="false" onAction="#fastCash" prefHeight="67.0" prefWidth="151.0" styleClass="main-btn" stylesheets="@../assets/style.css" text="FAST CASH" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="58.0" layoutY="554.0" mnemonicParsing="false" onAction="#deposit" prefHeight="67.0" prefWidth="151.0" styleClass="main-btn" stylesheets="@../assets/style.css" text="DEPOSIT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="327.0" layoutY="549.0" mnemonicParsing="false" onAction="#cashWithdrawal" prefHeight="76.0" prefWidth="190.0" styleClass="main-btn" stylesheets="@../assets/style.css" text="CASH WITHDRAWAL" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Text layoutX="218.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO SRI LANKAN BANK" wrappingWidth="446.936767578125">
+         <font>
+            <Font name="System Bold" size="27.0" />
          </font>
       </Text>
-      <Button layoutX="341.0" layoutY="437.0" mnemonicParsing="false" onAction="#getStatement" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: white;" text="MINI STATEMENT">
+      <Text layoutX="314.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SECTION: TRANSACTION" wrappingWidth="253.33673095703125">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="System Bold" size="18.0" />
          </font>
-      </Button>
-      <Button layoutX="257.0" layoutY="536.0" mnemonicParsing="false" onAction="#exit" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: white;" text="EXIT">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-      </Button>
-      <Button layoutX="341.0" layoutY="482.0" mnemonicParsing="false" onAction="#getBalance" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: white;" text="BALANCE ENQUIRY">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
-      <Button layoutX="154.0" layoutY="482.0" mnemonicParsing="false" onAction="#getChanegPin" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: white;" text="PIN CHANGE">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
-      <Button layoutX="154.0" layoutY="437.0" mnemonicParsing="false" onAction="#fastCash" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: white;" text="FAST CASH">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
-      <Button layoutX="154.0" layoutY="396.0" mnemonicParsing="false" onAction="#deposit" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: white;" text="DEPOSIT">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
-      <Button layoutX="341.0" layoutY="396.0" mnemonicParsing="false" onAction="#cashWithdrawal" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: white;" text="CASH WITHDRAWAL">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
+      </Text>
+      <ImageView fitHeight="500.0" fitWidth="400.0" layoutX="232.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/transaction.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

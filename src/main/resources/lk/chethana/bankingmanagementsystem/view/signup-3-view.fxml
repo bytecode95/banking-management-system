@@ -13,9 +13,9 @@
 
 <AnchorPane prefHeight="800.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.chethana.bankingmanagementsystem.controllers.SignUpThreeController">
    <children>
-      <AnchorPane fx:id="root" layoutX="3.0" prefHeight="803.0" prefWidth="853.0" style="-fx-background-color: #f5f6fa;">
+      <AnchorPane fx:id="root" prefHeight="803.0" prefWidth="853.0" styleClass="signup-form" stylesheets="@../assets/style.css">
          <children>
-            <ImageView fitHeight="112.0" fitWidth="168.0" layoutX="41.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="112.0" fitWidth="168.0" layoutX="33.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assets/icons8-bank-64.png" />
                </image>
